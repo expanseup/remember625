@@ -1,0 +1,9 @@
+node_modules
+.next
+Marketing
+AGENTS.md
+CLAUDE.md
+public/assets/generated
+supabase/*.sql
+package-lock.json
+
