@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { AdSlot } from "@/components/ad-slot";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = { title: "서비스 소개" };
@@ -58,6 +59,7 @@ export default function AboutPage() {
             <a href="mailto:contact@example.com">문의하기</a>
           </Button>
         </div>
+        <AdSlot placement="about" className="mt-12" />
       </div>
     </div>
   );

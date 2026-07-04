@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
-type AdPlacement = "main" | "result" | "wall";
+type AdPlacement = "main" | "result" | "wall" | "about" | "letter";
 type AdUnitKey = "mobileLarge" | "mobileSlim" | "square" | "wide";
 
 type AdUnit = {
@@ -49,6 +49,8 @@ const PLACEMENT_UNITS: Record<
   main: { mobile: "mobileLarge", desktop: "wide" },
   result: { mobile: "mobileSlim", desktop: "square" },
   wall: { mobile: "square", desktop: "wide" },
+  about: { mobile: "mobileLarge", desktop: "wide" },
+  letter: { mobile: "mobileSlim", desktop: "square" },
 };
 
 function selectAdUnit(placement: AdPlacement, isDesktop: boolean) {
@@ -81,13 +83,25 @@ export function AdSlot({
   useEffect(() => {
     if (!unit) return;
 
+    const selector = `.kakao_ad_area[data-ad-unit="${unit.unit}"]`;
+    if (document.querySelector(selector)?.getAttribute("data-loaded") === "true") {
+      return;
+    }
+
     const script = document.createElement("script");
     script.src = KAKAO_AD_SCRIPT_URL;
     script.async = true;
     script.setAttribute("data-remember625-ad-loader", `${placement}-${unit.key}`);
     document.body.appendChild(script);
 
-    return () => script.remove();
+    const target = document.querySelector(selector);
+    if (target) {
+      target.setAttribute("data-loaded", "true");
+    }
+
+    return () => {
+      script.remove();
+    };
   }, [placement, unit]);
 
   const width = unit?.width ?? 320;
@@ -102,14 +116,14 @@ export function AdSlot({
       aria-label="광고"
     >
       <div
-        className="border-navy/10 flex max-w-full items-center justify-center overflow-hidden rounded-2xl border bg-white/45"
-        style={{ width, minHeight: height }}
+        className="border-navy/10 flex max-w-full items-center justify-center overflow-hidden rounded-2xl border bg-white/45 p-1"
+        style={{ width: `min(100%, ${width}px)`, minHeight: height }}
       >
         {unit ? (
           <ins
             key={`${placement}-${unit.key}`}
             className="kakao_ad_area"
-            style={{ display: "none" }}
+            style={{ display: "block", width: `${unit.width}px`, height: `${unit.height}px` }}
             data-ad-unit={unit.unit}
             data-ad-width={String(unit.width)}
             data-ad-height={String(unit.height)}

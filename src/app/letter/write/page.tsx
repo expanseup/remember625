@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { AdSlot } from "@/components/ad-slot";
 import { LetterEditor } from "@/components/letter-editor";
 import { CATEGORY_META } from "@/lib/constants";
 import { getQuizAttempt } from "@/lib/repository";
@@ -28,11 +29,11 @@ export default async function LetterWritePage({
             오늘 퀴즈에서 배운 내용을 바탕으로 참전용사분들께 감사의 마음을
             남겨보세요.
           </p>
-          <dl className="border-navy/10 mt-8 border-y py-4 text-sm">
-            <div className="flex justify-between gap-4">
-              <dt className="text-gray-text">퀴즈</dt>
-              <dd className="text-navy font-semibold">
-                {CATEGORY_META[attempt.category].label}
+            <dl className="border-navy/10 mt-8 border-y py-4 text-sm">
+              <div className="flex justify-between gap-4">
+                <dt className="text-gray-text">퀴즈</dt>
+                <dd className="text-navy font-semibold">
+                  {CATEGORY_META[attempt.category].label}
               </dd>
             </div>
             <div className="mt-3 flex justify-between gap-4">
@@ -40,9 +41,10 @@ export default async function LetterWritePage({
               <dd>
                 {attempt.score} / {attempt.totalQuestions}
               </dd>
-            </div>
-          </dl>
-        </div>
+              </div>
+            </dl>
+            <AdSlot placement="letter" className="mt-8" />
+          </div>
         <LetterEditor attempt={attempt} />
       </div>
     </div>

@@ -1,0 +1,27 @@
+# 300 x 100
+<ins class="kakao_ad_area" style="display:none;"
+data-ad-unit = "DAN-rqVulq3ixbjIJK0I"
+data-ad-width = "320"
+data-ad-height = "100"></ins>
+<script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
+
+#300x250
+<ins class="kakao_ad_area" style="display:none;"
+data-ad-unit = "DAN-ufqDWiHFDsvKcLWr"
+data-ad-width = "250"
+data-ad-height = "250"></ins>
+<script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
+
+#728x90
+<ins class="kakao_ad_area" style="display:none;"
+data-ad-unit = "DAN-MwrdXUgsOALYr9jf"
+data-ad-width = "728"
+data-ad-height = "90"></ins>
+<script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
+
+#320x50
+<ins class="kakao_ad_area" style="display:none;"
+data-ad-unit = "DAN-9iVv95wxc4NIO5ff"
+data-ad-width = "320"
+data-ad-height = "50"></ins>
+<script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
