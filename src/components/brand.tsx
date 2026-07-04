@@ -17,18 +17,18 @@ export function Brand({
     >
       <span
         className={cn(
-          "border-gold/30 bg-navy flex shrink-0 items-center justify-center overflow-hidden rounded-full border",
-          compact ? "size-7" : "size-9",
+          "flex shrink-0 items-center justify-center",
+          compact ? "size-8" : "size-10",
         )}
         aria-hidden="true"
       >
         <Image
           src="/assets/generated/logo-remember625-symbol.webp"
           alt=""
-          width={compact ? 24 : 32}
-          height={compact ? 24 : 32}
-          sizes={compact ? "24px" : "32px"}
-          className="size-[86%] object-contain"
+          width={compact ? 32 : 40}
+          height={compact ? 32 : 40}
+          sizes={compact ? "32px" : "40px"}
+          className="size-full object-contain"
           priority
         />
       </span>
