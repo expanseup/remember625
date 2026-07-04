@@ -29,7 +29,7 @@ export default async function Home() {
           <div>
             <p className="section-kicker">6.25 참전용사 감사 캠페인</p>
             <h1 className="service-title fluid-hero-title mt-4">
-              기억작전 625
+              Remember625
             </h1>
             <p className="text-navy mt-6 max-w-3xl text-[clamp(1.25rem,3.5vw,1.8rem)] leading-[1.42] font-semibold tracking-[-0.035em]">
               퀴즈로 기억하고, 편지로 감사하는 참여형 캠페인

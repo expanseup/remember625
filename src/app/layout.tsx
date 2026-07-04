@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   ),
-  title: { default: "기억작전 625", template: "%s | 기억작전 625" },
+  title: { default: "Remember625", template: "%s | Remember625" },
   description: "퀴즈로 기억하고, 편지로 감사하는 6.25 참전용사 감사 캠페인",
   openGraph: {
-    title: "기억작전 625",
+    title: "Remember625",
     description: "퀴즈로 기억하고, 편지로 감사하는 6.25 참전용사 감사 캠페인",
     images: ["/assets/generated/hero-service-visual-v2.webp"],
   },

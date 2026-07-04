@@ -16,7 +16,7 @@ export function getShareCardText(score: number, total = 10) {
     scoreDetail: `${total}문제 중 ${score}문제 정답`,
     title: result.title,
     comment: getShareCardComment(score, total),
-    serviceName: "기억작전 625",
+    serviceName: "Remember625",
     tagline: "퀴즈로 기억하고, 편지로 감사하기",
     invitation: "당신도 기억에 동참해보세요",
   };

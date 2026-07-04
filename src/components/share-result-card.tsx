@@ -299,7 +299,7 @@ export function ShareResultCard({ attempt }: { attempt: QuizAttempt }) {
       });
       const shareData = {
         files: [file],
-        title: "기억작전 625 퀴즈 결과",
+        title: "Remember625 퀴즈 결과",
         text: `${copy.serviceName}에서 ${copy.scoreDetail}을 기록했습니다. ${copy.invitation}`,
       } satisfies ShareData;
 

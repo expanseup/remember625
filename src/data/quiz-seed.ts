@@ -532,7 +532,7 @@ const timelineFacts: TimelineFact[] = [
     time: "1950년 6월 25일",
     context: "북한군의 남침으로 전쟁이 시작된 사건",
     significance: "6.25 전쟁의 시작을 기억하는 핵심 날짜",
-    clue: "기억작전 625의 숫자와 직접 연결되는 날짜",
+    clue: "Remember625의 숫자와 직접 연결되는 날짜",
   },
   {
     event: "유엔 안전보장이사회 대응",
@@ -1611,7 +1611,7 @@ const memorialFacts: MemorialFact[] = [
     caution: "눈길을 끌기 위해 사실을 과장하는 태도",
   },
   {
-    topic: "기억작전 625의 참여 방식",
+    topic: "Remember625의 참여 방식",
     answer: "퀴즈로 배우고 감사편지로 마음을 남기는 방식",
     concept: "참여형 보훈 캠페인",
     practice: "퀴즈 해설을 읽고 진심 어린 편지를 작성하는 것",

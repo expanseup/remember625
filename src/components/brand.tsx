@@ -12,7 +12,7 @@ export function Brand({
     <Link
       href="/"
       className="inline-flex min-h-11 items-center gap-2.5"
-      aria-label="기억작전 625 홈"
+      aria-label="Remember625 홈"
     >
       <span
         className={cn(
@@ -43,7 +43,7 @@ export function Brand({
           inverted ? "text-white" : "text-navy",
         )}
       >
-        기억작전 <span className="text-gold">625</span>
+        Remember<span className="text-gold">625</span>
       </span>
     </Link>
   );

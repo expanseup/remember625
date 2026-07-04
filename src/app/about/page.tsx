@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "서비스 소개" };
 export default function AboutPage() {
   const sections = [
     [
-      "기억작전 625란?",
+      "Remember625란?",
       "6.25 참전용사분들의 희생을 기억하기 위해 만들어진 참여형 웹 캠페인입니다. 사용자는 퀴즈를 통해 역사적 사실을 배우고, 감사편지를 남기며 기억에 동참할 수 있습니다.",
     ],
     [
