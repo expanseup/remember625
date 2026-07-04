@@ -56,7 +56,7 @@ export default function AboutPage() {
             <Link href="/quiz">문제 시작하기</Link>
           </Button>
           <Button asChild variant="outline" size="lg">
-            <a href="mailto:contact@example.com">문의하기</a>
+            <a href="mailto:expanseup.shop@gmail.com">문의하기</a>
           </Button>
         </div>
         <AdSlot placement="about" className="mt-12" />

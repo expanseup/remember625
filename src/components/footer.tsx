@@ -25,7 +25,10 @@ export function Footer() {
           <Link href="/wall" className="hover:text-navy">
             감사의 벽
           </Link>
-          <a href="mailto:contact@example.com" className="hover:text-navy">
+          <a
+            href="mailto:expanseup.shop@gmail.com"
+            className="hover:text-navy"
+          >
             문의
           </a>
         </nav>
