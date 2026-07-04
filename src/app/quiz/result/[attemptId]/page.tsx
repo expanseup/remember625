@@ -49,7 +49,7 @@ export default async function QuizResultPage({
             </Link>
           </div>
         </div>
-        <AdSlot className="mt-14" />
+        <AdSlot placement="result" className="mt-14" />
       </div>
     </div>
   );

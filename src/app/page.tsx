@@ -175,7 +175,7 @@ export default async function Home() {
               첫 감사편지가 기다리고 있습니다.
             </p>
           )}
-          <AdSlot className="mt-10" />
+          <AdSlot placement="main" className="mt-10" />
         </div>
       </section>
     </>

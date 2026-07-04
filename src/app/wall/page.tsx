@@ -40,7 +40,9 @@ export default async function WallPage({
               {data.letters.map((letter, index) => (
                 <div key={letter.id}>
                   <PublicLetterCard letter={letter} />
-                  {index === 4 && <AdSlot className="my-7" />}
+                  {index === 4 && (
+                    <AdSlot placement="wall" className="my-7" />
+                  )}
                 </div>
               ))}
             </div>
